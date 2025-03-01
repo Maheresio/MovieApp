@@ -2,8 +2,6 @@
 ---
 
 **Flutter Movie App Project**  
-*Role: Flutter Developer*  
-*Duration: [Insert Duration]*  
 
 - Developed a **cross-platform movie app** using **Flutter** and **Dart**, leveraging the **BLoC (Business Logic Component)** pattern for state management to ensure a clean and maintainable codebase.  
 - Integrated with **The Movie Database (TMDb) API** to fetch and display real-time movie data, including **now playing**, **popular**, and **top-rated movies**, as well as detailed movie information and recommendations.  

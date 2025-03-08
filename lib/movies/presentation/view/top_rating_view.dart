@@ -11,7 +11,7 @@ import '../../../core/constants/app_strings.dart';
 import '../screens/movie_detail_screen.dart';
 
 class TopRatingView extends StatelessWidget {
-  const TopRatingView({Key? key}) : super(key: key);
+  const TopRatingView({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -12,10 +12,10 @@ import '../../domain/entities/movies.dart';
 
 class MoviesListScreen extends StatelessWidget {
   const MoviesListScreen({
-    Key? key,
+    super.key,
     required this.movies,
     required this.titleAppBar,
-  }) : super(key: key);
+  });
   final List<Movies> movies;
   final String titleAppBar;
   @override
@@ -51,9 +51,9 @@ class MoviesListScreen extends StatelessWidget {
 
 class MoviesItem extends StatelessWidget {
   const MoviesItem({
-    Key? key,
+    super.key,
     required this.moviesData,
-  }) : super(key: key);
+  });
   final Movies moviesData;
   @override
   Widget build(BuildContext context) {

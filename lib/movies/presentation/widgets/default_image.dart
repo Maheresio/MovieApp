@@ -6,10 +6,10 @@ class DefaultImage extends StatelessWidget {
   final double height;
   final String image;
   const DefaultImage({
-    Key? key,
+    super.key,
     required this.height,
     required this.image,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

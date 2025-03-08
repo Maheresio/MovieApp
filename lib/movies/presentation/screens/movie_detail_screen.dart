@@ -25,10 +25,10 @@ class MovieDetailScreen extends StatelessWidget {
   final int id;
   final Movies movies;
   const MovieDetailScreen({
-    Key? key,
+    super.key,
     required this.id,
     required this.movies,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -75,10 +75,10 @@ class MovieDetailContent extends StatelessWidget {
   final List<Recommendation> recommendations;
 
   const MovieDetailContent({
-    Key? key,
+    super.key,
     required this.movie,
     required this.recommendations,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

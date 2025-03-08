@@ -11,7 +11,7 @@ import 'package:shimmer/shimmer.dart';
 import '../screens/movie_detail_screen.dart';
 
 class PopularMoviesView extends StatelessWidget {
-  const PopularMoviesView({Key? key}) : super(key: key);
+  const PopularMoviesView({super.key});
 
   @override
   Widget build(BuildContext context) {

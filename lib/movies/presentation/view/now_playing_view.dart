@@ -12,7 +12,7 @@ import '../../../core/constants/app_strings.dart';
 import '../screens/movie_detail_screen.dart';
 
 class NowPlayingView extends StatelessWidget {
-  const NowPlayingView({Key? key}) : super(key: key);
+  const NowPlayingView({super.key});
 
   @override
   Widget build(BuildContext context) {

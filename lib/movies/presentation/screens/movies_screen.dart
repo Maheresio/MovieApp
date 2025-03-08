@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:second_project/movies/presentation/widgets/movies_category_section.dart';
 import '../controller/movies_bloc/movies_bloc.dart';
 import '../controller/movies_bloc/movies_state.dart';
-import 'movies_list_screen.dart';
+import 'see_more_movies_list_screen.dart';
 import '../view/now_playing_view.dart';
 import '../view/popular_movies_view.dart';
 import '../view/top_rating_view.dart';
@@ -30,7 +30,7 @@ class MainMoviesScreen extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (_) {
-                          return MoviesListScreen(
+                          return SeeMoreMoviesListScreen(
                             movies: state.popularPlayingMovies,
                             titleAppBar: "Popular Movies",
                           );
@@ -47,7 +47,7 @@ class MainMoviesScreen extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (_) {
-                          return MoviesListScreen(
+                          return SeeMoreMoviesListScreen(
                             movies: state.topRatingPlayingMovies,
                             titleAppBar: "Top Rated Movies",
                           );

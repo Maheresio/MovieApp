@@ -1,12 +1,11 @@
 # MovieApp - Flutter Movie Application 🎬✨
 
-![OutOrNot Banner](movie.jpg)
+![Movie Banner](movie.jpg)
 
 ## 🎥 App Showcase
 
 ### 🎮 Video Demonstration
-[🎥 Watch App Demo](#) *(https://drive.google.com/file/d/1_I_xSI6Tzy_4Mu-VwSR8UkGvKlmnUFZG/view?usp=sharing)*
-
+[🎥 Watch App Demo](https://drive.google.com/file/d/1_I_xSI6Tzy_4Mu-VwSR8UkGvKlmnUFZG/view?usp=sharing)
 ### 📱 Screenshots
 <p align="center">
   <img src="1.png" width="200" />

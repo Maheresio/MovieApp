@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:second_project/core/helpers/service_locator.dart';
+import 'package:sizer/sizer.dart';
+
 import 'core/constants/app_color.dart';
+import 'core/helpers/service_locator.dart';
+import 'movies/domain/repository/base_movies_repository.dart';
 import 'movies/domain/usecases/get_movies_details_usecase.dart';
 import 'movies/domain/usecases/get_movies_recommendation_usecase.dart';
 import 'movies/domain/usecases/get_now_playing_usecase.dart';
@@ -11,8 +14,6 @@ import 'movies/presentation/controller/movies_bloc/movies_bloc.dart';
 import 'movies/presentation/controller/movies_bloc/movies_details_bloc.dart';
 import 'movies/presentation/controller/movies_bloc/movies_event.dart';
 import 'movies/presentation/screens/splash_screen.dart';
-import 'package:sizer/sizer.dart';
-import 'movies/domain/repository/base_movies_repository.dart';
 
 void main() {
   setupServiceLocator();

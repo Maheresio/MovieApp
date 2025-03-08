@@ -1,8 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:second_project/core/constants/app_strings.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:sizer/sizer.dart';
+
+import '../../../core/constants/app_strings.dart';
 
 class SeeMoreMovieImage extends StatelessWidget {
   const SeeMoreMovieImage({super.key, required this.backdropPath});

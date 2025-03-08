@@ -1,7 +1,8 @@
+import 'dart:core';
+
 import '../../../../core/utils/enums.dart';
 import '../../../domain/entities/movies_details.dart';
 import '../../../domain/entities/recommendation.dart';
-import 'dart:core';
 
 class MoviesDetailsState {
   final MoviesDetails? moviesDetails;

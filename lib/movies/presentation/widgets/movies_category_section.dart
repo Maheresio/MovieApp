@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:second_project/core/constants/app_color.dart';
+
+import '../../../core/constants/app_color.dart';
 
 class MoviesCategorySection extends StatelessWidget {
   final String title;

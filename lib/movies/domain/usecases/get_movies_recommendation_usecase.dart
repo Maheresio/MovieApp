@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import '../entities/recommendation.dart';
-import '../repository/base_movies_repository.dart';
 
 import '../../../core/error/faillure.dart';
+import '../entities/recommendation.dart';
+import '../repository/base_movies_repository.dart';
 
 class GetMoviesRecommendationUseCase {
   final BaseMoviesRepository baseMoviesRepository;

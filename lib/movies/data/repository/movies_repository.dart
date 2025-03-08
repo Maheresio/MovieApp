@@ -1,11 +1,12 @@
 import 'package:dartz/dartz.dart';
+
 import '../../../core/error/faillure.dart';
 import '../../../core/error/server_exception.dart';
-import '../data_source/movies_remote_data_source.dart';
 import '../../domain/entities/movies.dart';
 import '../../domain/entities/movies_details.dart';
 import '../../domain/entities/recommendation.dart';
 import '../../domain/repository/base_movies_repository.dart';
+import '../data_source/movies_remote_data_source.dart';
 
 class MoviesRepository extends BaseMoviesRepository {
   final BaseMoviesRemoteDataSource baseMoviesRemoteDataSource;

@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import '../entities/movies.dart';
-import '../repository/base_movies_repository.dart';
 
 import '../../../core/error/faillure.dart';
+import '../entities/movies.dart';
+import '../repository/base_movies_repository.dart';
 
 class GetNowPlayingUseCase {
   final BaseMoviesRepository baseMoviesRepository;

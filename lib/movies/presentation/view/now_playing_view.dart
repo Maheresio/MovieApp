@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:second_project/movies/presentation/widgets/now_playing_loading_widget.dart';
-import 'package:second_project/movies/presentation/widgets/now_playing_movies_carousel.dart';
+import '../widgets/now_playing_loading_widget.dart';
+import '../widgets/now_playing_movies_carousel.dart';
 import '../../../core/utils/enums.dart';
 import '../controller/movies_bloc/movies_bloc.dart';
 import '../controller/movies_bloc/movies_state.dart';

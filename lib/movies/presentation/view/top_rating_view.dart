@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:second_project/movies/presentation/widgets/top_rating_error_widget.dart';
-import 'package:second_project/movies/presentation/widgets/top_rating_movies_listview.dart';
+import '../widgets/top_rating_error_widget.dart';
+import '../widgets/top_rating_movies_listview.dart';
 import '../../../core/utils/enums.dart';
 import '../controller/movies_bloc/movies_bloc.dart';
 import '../controller/movies_bloc/movies_state.dart';

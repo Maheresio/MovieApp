@@ -1,13 +1,13 @@
 import 'package:bloc/bloc.dart';
-import '../../../domain/usecases/get_movies_details_usecase.dart';
-import '../../../domain/usecases/get_movies_recommendation_usecase.dart';
-import 'movies_details_event.dart';
-import 'movies_details_state.dart';
 
 import '../../../../core/utils/enums.dart';
 import '../../../data/data_source/movies_remote_data_source.dart';
 import '../../../data/repository/movies_repository.dart';
 import '../../../domain/repository/base_movies_repository.dart';
+import '../../../domain/usecases/get_movies_details_usecase.dart';
+import '../../../domain/usecases/get_movies_recommendation_usecase.dart';
+import 'movies_details_event.dart';
+import 'movies_details_state.dart';
 
 class MoviesDetailsBloc extends Bloc<MoviesDetailsEvent, MoviesDetailsState> {
   final GetMoviesDetailsUseCase getMoviesDetailsUseCase;

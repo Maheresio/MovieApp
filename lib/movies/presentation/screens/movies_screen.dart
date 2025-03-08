@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:second_project/movies/presentation/widgets/movies_category_section.dart';
+
 import '../controller/movies_bloc/movies_bloc.dart';
 import '../controller/movies_bloc/movies_state.dart';
-import 'see_more_movies_list_screen.dart';
 import '../view/now_playing_view.dart';
 import '../view/popular_movies_view.dart';
 import '../view/top_rating_view.dart';
+import '../widgets/movies_category_section.dart';
+import 'see_more_movies_list_screen.dart';
 
 class MainMoviesScreen extends StatelessWidget {
   const MainMoviesScreen({super.key});

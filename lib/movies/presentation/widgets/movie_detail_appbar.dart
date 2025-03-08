@@ -2,9 +2,10 @@ import 'package:animate_do/animate_do.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:second_project/core/constants/app_strings.dart';
-import 'package:second_project/movies/domain/entities/movies.dart';
 import 'package:sizer/sizer.dart';
+
+import '../../../core/constants/app_strings.dart';
+import '../../domain/entities/movies.dart';
 
 class MovieDetailAppBar extends StatelessWidget {
   final Movies movie;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:second_project/core/constants/app_color.dart';
-import 'package:second_project/movies/domain/entities/movies.dart';
-import 'package:second_project/movies/presentation/widgets/release_date_badge.dart';
+import '../../../core/constants/app_color.dart';
+import '../../domain/entities/movies.dart';
+import 'release_date_badge.dart';
 import 'package:sizer/sizer.dart';
 
 class SeeMoreMovieDetails extends StatelessWidget {

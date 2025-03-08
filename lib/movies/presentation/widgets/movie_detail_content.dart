@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:second_project/movies/domain/entities/movies.dart';
-import 'package:second_project/movies/domain/entities/recommendation.dart';
-import 'package:second_project/movies/presentation/widgets/movie_detail_appbar.dart';
-import 'package:second_project/movies/presentation/widgets/movie_detail_info.dart';
+import '../../domain/entities/movies.dart';
+import '../../domain/entities/recommendation.dart';
+import 'movie_detail_appbar.dart';
+import 'movie_detail_info.dart';
 import 'package:second_project/movies/presentation/widgets/movie_details_recommendations.dart';
 import 'package:second_project/movies/presentation/widgets/recommendations_grid.dart';
 

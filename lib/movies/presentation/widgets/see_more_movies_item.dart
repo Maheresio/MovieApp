@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:second_project/core/constants/app_color.dart';
-import 'package:second_project/movies/domain/entities/movies.dart';
-import 'package:second_project/movies/presentation/widgets/see_more_movie_details.dart';
-import 'package:second_project/movies/presentation/widgets/see_more_movie_image.dart';
+import '../../../core/constants/app_color.dart';
+import '../../domain/entities/movies.dart';
+import 'see_more_movie_details.dart';
+import 'see_more_movie_image.dart';
 import 'package:sizer/sizer.dart';
 
 class SeeMoreMoviesItem extends StatelessWidget {

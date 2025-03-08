@@ -1,5 +1,5 @@
-import 'genres_model.dart';
 import '../../domain/entities/movies_details.dart';
+import 'genres_model.dart';
 
 class MoviesDetailsModel extends MoviesDetails {
   MoviesDetailsModel({

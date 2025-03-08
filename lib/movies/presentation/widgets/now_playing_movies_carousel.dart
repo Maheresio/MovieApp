@@ -1,8 +1,9 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:second_project/movies/domain/entities/movies.dart';
-import 'package:second_project/movies/presentation/widgets/movie_carousel_item.dart';
+
+import '../../domain/entities/movies.dart';
+import 'movie_carousel_item.dart';
 
 class NowPlayingMoviesCarousel extends StatelessWidget {
   final List<Movies> movies;

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:second_project/movies/presentation/widgets/see_more_movies_item.dart';
-import 'movie_detail_screen.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../domain/entities/movies.dart';
+import '../widgets/see_more_movies_item.dart';
+import 'movie_detail_screen.dart';
 
 class SeeMoreMoviesListScreen extends StatelessWidget {
   const SeeMoreMoviesListScreen({

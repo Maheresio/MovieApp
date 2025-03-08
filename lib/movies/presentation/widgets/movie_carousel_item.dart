@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:second_project/core/constants/app_strings.dart';
-import 'package:second_project/movies/domain/entities/movies.dart';
-import 'package:second_project/movies/presentation/screens/movie_detail_screen.dart';
+import '../../../core/constants/app_strings.dart';
+import '../../domain/entities/movies.dart';
+import '../screens/movie_detail_screen.dart';
 import 'package:second_project/movies/presentation/widgets/movie_backdrop_image.dart';
 import 'package:second_project/movies/presentation/widgets/movie_info.dart';
 

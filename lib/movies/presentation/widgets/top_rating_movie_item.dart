@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:second_project/core/constants/app_strings.dart';
-import 'package:second_project/movies/domain/entities/movies.dart';
-import 'package:second_project/movies/presentation/screens/movie_detail_screen.dart';
+import '../../../core/constants/app_strings.dart';
+import '../../domain/entities/movies.dart';
+import '../screens/movie_detail_screen.dart';
 import 'package:shimmer/shimmer.dart';
 
 class TopRatingMovieItem extends StatelessWidget {

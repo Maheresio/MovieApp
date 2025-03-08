@@ -1,7 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
-import 'package:second_project/movies/domain/entities/movies.dart';
-import 'package:second_project/movies/presentation/widgets/popular_movie_item.dart';
+import '../../domain/entities/movies.dart';
+import 'popular_movie_item.dart';
 
 class PopularMoviesListView extends StatelessWidget {
   final List<Movies> movies;

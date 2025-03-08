@@ -113,20 +113,3 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ---
 
-### 📁 Project Structure
-
-```
-lib/
-├── core/
-│   ├── constants/
-│   │   ├── app_assets.dart
-│   │   ├── app_color.dart
-│   │   └── app_strings.dart
-│   ├── error/
-│   │   ├── faillure.dart
-│   │   └── server_exception.dart
-│   ├── helpers/
-│   │   └── service_locator.dart
-│   ├── network/
-│   │   └── error_message_model.dart
-│   └── utils

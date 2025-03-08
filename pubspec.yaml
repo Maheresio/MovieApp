@@ -47,6 +47,7 @@ dependencies:
   shimmer: ^3.0.0
   sizer: ^3.0.5
   lottie: ^3.3.1
+  get_it: ^8.0.3
 
 dev_dependencies:
   flutter_test:

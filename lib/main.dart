@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:second_project/core/helpers/service_locator.dart';
 import 'core/constants/app_color.dart';
 import 'movies/domain/usecases/get_movies_details_usecase.dart';
 import 'movies/domain/usecases/get_movies_recommendation_usecase.dart';
@@ -11,11 +12,12 @@ import 'movies/presentation/controller/movies_bloc/movies_details_bloc.dart';
 import 'movies/presentation/controller/movies_bloc/movies_event.dart';
 import 'movies/presentation/screens/splash_screen.dart';
 import 'package:sizer/sizer.dart';
-import 'movies/data/data_source/movies_remote_data_source.dart';
-import 'movies/data/repository/movies_repository.dart';
 import 'movies/domain/repository/base_movies_repository.dart';
+
 void main() {
-  runApp(const MyApp());
+  setupServiceLocator();
+
+  runApp(Sizer(builder: (context, orientation, deviceType) => const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -23,48 +25,50 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Sizer(builder: (context, orientation, deviceType) {
-      BaseMoviesRemoteDataSource baseMoviesRemoteDataSource =
-          MoviesRemoteDataSource();
-      BaseMoviesRepository baseMoviesRepository = MoviesRepository(
-          baseMoviesRemoteDataSource: baseMoviesRemoteDataSource);
-      return MultiBlocProvider(
-        providers: [
-          BlocProvider(
-            create: (context) => MoviesBloc(
-              GetNowPlayingUseCase(baseMoviesRepository: baseMoviesRepository),
-              GetPopularMoviesUseCase(
-                  baseMoviesRepository: baseMoviesRepository),
-              GetTopRateMoviesUseCase(
-                  baseMoviesRepository: baseMoviesRepository),
-            )
-              ..add(GetNowPlayingEvent())
-              ..add(GetPopularMoviesEvent())
-              ..add(GetTopRatedEvent()),
-            lazy: false,
-          ),
-          BlocProvider(
-            create: (context) => MoviesDetailsBloc(
-              GetMoviesDetailsUseCase(
-                baseMoviesRepository: baseMoviesRepository,
-              ),
-              GetMoviesRecommendationUseCase(
-                  baseMoviesRepository: baseMoviesRepository),
-            ),
-          ),
-        ],
-        child: MaterialApp(
-          debugShowCheckedModeBanner: false,
-          theme: ThemeData.dark().copyWith(
-            scaffoldBackgroundColor: Colors.grey.shade900,
-            appBarTheme: const AppBarTheme(
-              centerTitle: true,
-              backgroundColor: AppColor.kBlack,
-            ),
-          ),
-          home: const SplashScreen(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create:
+              (context) =>
+                  MoviesBloc(
+                      GetNowPlayingUseCase(
+                        baseMoviesRepository: getIt<BaseMoviesRepository>(),
+                      ),
+                      GetPopularMoviesUseCase(
+                        baseMoviesRepository: getIt<BaseMoviesRepository>(),
+                      ),
+                      GetTopRateMoviesUseCase(
+                        baseMoviesRepository: getIt<BaseMoviesRepository>(),
+                      ),
+                    )
+                    ..add(GetNowPlayingEvent())
+                    ..add(GetPopularMoviesEvent())
+                    ..add(GetTopRatedEvent()),
+          lazy: false,
         ),
-      );
-    });
+        BlocProvider(
+          create:
+              (context) => MoviesDetailsBloc(
+                GetMoviesDetailsUseCase(
+                  baseMoviesRepository: getIt<BaseMoviesRepository>(),
+                ),
+                GetMoviesRecommendationUseCase(
+                  baseMoviesRepository: getIt<BaseMoviesRepository>(),
+                ),
+              ),
+        ),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData.dark().copyWith(
+          scaffoldBackgroundColor: Colors.grey.shade900,
+          appBarTheme: const AppBarTheme(
+            centerTitle: true,
+            backgroundColor: AppColor.kBlack,
+          ),
+        ),
+        home: const SplashScreen(),
+      ),
+    );
   }
 }

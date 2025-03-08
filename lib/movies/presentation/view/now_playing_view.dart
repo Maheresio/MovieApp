@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:second_project/movies/presentation/widgets/loading_widget.dart';
+import 'package:second_project/movies/presentation/widgets/now_playing_loading_widget.dart';
 import 'package:second_project/movies/presentation/widgets/now_playing_movies_carousel.dart';
 import '../../../core/utils/enums.dart';
 import '../controller/movies_bloc/movies_bloc.dart';
 import '../controller/movies_bloc/movies_state.dart';
-
-
 
 class NowPlayingView extends StatelessWidget {
   const NowPlayingView({super.key});
@@ -17,7 +15,7 @@ class NowPlayingView extends StatelessWidget {
       builder: (context, state) {
         switch (state.nowPlayingState) {
           case RequestState.loading:
-            return const LoadingWidget();
+            return const NowPlayingLoadingWidget();
           case RequestState.loaded:
             return NowPlayingMoviesCarousel(movies: state.nowPlayingMovies);
           case RequestState.error:
@@ -27,4 +25,3 @@ class NowPlayingView extends StatelessWidget {
     );
   }
 }
-

@@ -16,7 +16,7 @@
   <img src="6.png" width="200" />
 </p>
 
-## 🚀 Project Overview
+##  Project Overview
 
 MovieApp is a Flutter-based application that provides users with a comprehensive movie database experience. It fetches data from **The Movie Database (TMDb)** API and displays information about now-playing movies, popular movies, and top-rated movies. Users can explore movie details, view recommendations, and enjoy a seamless user interface.
 
